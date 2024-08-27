@@ -106,7 +106,8 @@ export default function Home() {
       <section className="mb-8">
         <h2 className="text-3xl font-semibold mb-4">Apothecary vs Avoirdupois</h2>
         <p className="text-lg">
-          Understand the difference between the Apothecary system (used for medication) and the Avoirdupois system (used for weight and volume). The Apothecary system is based on grains, and it's essential for precise medication measurements.
+          Understand the difference between the Apothecary system (used for medication) and the Avoirdupois system (used for weight and volume).
+          The Apothecary system is based on grains, and it&apos;s essential for precise medication measurements.
           <br />
           <strong>Example:</strong> 1 grain = 65 milligrams
         </p>
@@ -144,7 +145,7 @@ export default function Home() {
           <code>35 mL * 2 g / 7 mL = 10 g</code>
         </pre>
         <p className="text-lg">
-          Explanation: List the amount you're converting, find the ratio, multiply by the ratio, and divide by the appropriate unit. This method applies to any conversion.
+          Explanation: List the amount you&apos;re converting, find the ratio, multiply by the ratio, and divide by the appropriate unit. This method applies to any conversion.
         </p>
       </section>
       {/* <button className="bg-slate-400 h-[50px] w-[100px] rounded mt-5 text-white">Next Page</button> */}
