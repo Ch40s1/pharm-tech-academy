@@ -2,9 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  background-color: rgb(43, 42, 51);
+}
 body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
+  @apply text-gray-200 font-sans m-5;
 }
 table {
   width: 100%;
