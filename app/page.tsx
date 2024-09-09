@@ -193,6 +193,14 @@ export default function Home() {
             </li>
             <li className="text-lg text-white">
               <Link
+                href="/modules/laws"
+                className="text-blue-500 underline hover:text-blue-700"
+              >
+                Laws
+              </Link>
+            </li>
+            <li className="text-lg text-white">
+              <Link
                 href="/modules/order-entry"
                 className="text-blue-500 underline hover:text-blue-700"
               >
