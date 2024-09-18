@@ -4,8 +4,105 @@ export function Math() {
       <section>
         <h2>Numbers</h2>
         <p>
-          In pharamcy we use two different number systems
+          In pharamcy we use two different number systems the Arabic and Roman
+          numerals. Arabic numerals are the numbers we use in everyday life, and
+          Roman numerals are often used to indicate quatities in prescriptions
+          order writting.
         </p>
+        <ul>
+          <li>ss = 1/2</li>
+          <li>i = 1</li>
+          <li>V = 5</li>
+          <li>X = 10</li>
+          <li>L = 50</li>
+          <li>C = 100</li>
+          <li>D = 500</li>
+          <li>M = 1000</li>
+        </ul>
+        <div>
+          <h3>Rules for positional notation</h3>
+          <ul>
+            <li>
+              When roman numerals are repeated, their values are added together.
+              Example: XXX = 30
+            </li>
+            <li>
+              When a smaller number appears before a larger number, the smaller
+              number is subtracted from the larger number. Example: IV = 4
+            </li>
+            <li>
+              When a smaller number appears after a larger number, the smaller
+              number is added to the larger number. Example: VI = 6
+            </li>
+            <li>
+              When a number is placed between two larger numbers, the smaller
+              number is subtracted from the larger number. Example: LIX = 59
+            </li>
+            <li>
+              When a number is placed between two smaller numbers, the smaller
+              number is added to the larger number. Example: XII = 12
+            </li>
+            <li>
+              Roman numerals cannot be repeated more than three times in a row.
+              Example: III = 3, IV = 4, V = 5
+            </li>
+            <li>
+              V and L cannot be repeated. Example: VV and LL are incorrect.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Practice Problems</h3>
+          <ul>
+            <li>25: XXV</li>
+            <li>49: iL</li>
+            <li>99: iC</li>
+            <li>100: C</li>
+            <li>500: D</li>
+            <li>1000: M</li>
+          </ul>
+          <ul>
+            <li>xxxiii: 33</li>
+            <li>lxxv: 75</li>
+            <li>xcv: 95</li>
+            <li>c: 100</li>
+            <li>dx: 510</li>
+            <li>m: 1000</li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="text-3xl font-semibold mb-4">Significat Figures</h2>
+        <p>
+          In pharmacy we often deal with measurements and calculations that
+          require precision. Significant figures are the digits in a number that
+          carry meaning contributing to its precision. When we multiply or divide
+          decimal fractions we must be careful to include only the significant
+          figures in our calculations and answers. This is to ensure that our
+          answers are accurate and precise. When a calculation involves several measurements,
+          the answer should have the same number of decimal places as the measurement with the fewest decimal places.
+          Also, if a calculation contains both measured and unmeasured numbers, the answer should have the
+          same number of decimal places as the measured number. Numbers that are not measured are not affected by significant figures.
+        </p>
+        <ul>
+          <li>Non Zero numbers are always significant</li>
+          <li>Any zeros between two significant figures are significant</li>
+          <li>Zeroes to the right of the decimal point and at the end of the number are always significant</li>
+          <li>Zeroes to the left of the decimal point and in a number greater than or equal to 10 are always significant</li>
+          <li>Zeroes used only to space the decimal are never significant</li>
+        </ul>
+        <div>
+          <h3>Practice Problems</h3>
+          <ul>
+            <li>0.00025: 2</li>
+            <li>0.000025: 2</li>
+            <li>51.0: 3</li>
+            <li>301.02: 5</li>
+            <li>2,000,000: 1</li>
+            <li>2.555: 4</li>
+          </ul>
+        </div>
       </section>
 
       <section className="mb-8">
@@ -103,16 +200,55 @@ export function Math() {
 
       <section className="mb-8">
         <h2 className="text-3xl font-semibold mb-4">
-          Apothecary vs Avoirdupois
+          Measurements
         </h2>
         <p className="text-lg">
-          Understand the difference between the Apothecary system (used for
-          medication) and the Avoirdupois system (used for weight and volume).
-          The Apothecary system is based on grains, and it&apos;s essential for
-          precise medication measurements.
-          <br />
-          <strong>Example:</strong> 1 grain = 65 milligrams
+          In the pharmacy, we use the metric system for measurements. Technitians need to know
+          metric systems for metric measures for both liquids and solids.
         </p>
+        <div>
+          <h3 className="font-semibold mb-2">Liquid Measures:</h3>
+          <ul>
+            <li>1 Liter (L) = 10dL = 1000 mL</li>
+            <li>1 Deciliter (dL) = 0.1 L = 100 mL</li>
+            <li>1 Milliliter (mL) = 0.001 L = 0.01 dL</li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="font-semibold mb-2">Solid Measures:</h3>
+          <ul>
+            <li>1 Kilogram (kg) = 1000 g</li>
+            <li>1 Gram (g) = 0.001kg = 1000 mg</li>
+            <li>1 Milligram (mg) = 0.001g = 1000 mcg</li>
+            <li>1 Microgram (mcg) = 0.001mg = 0.000001 g</li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="font-semibold mb-2">Avoirdupois system</h3>
+          <ul>
+            <li>1 pound (lb) = 16 oz</li>
+            <li>1 ounce (oz) = 437.5 gr</li>
+            <li>1 grain (gr) = 64.8 mg</li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="font-semibold mb-2">Apothecary system</h3>
+          <ul>
+            <li>gallon (gal) = 4 qt</li>
+            <li>quart (qt) = 2 pt</li>
+            <li>pint (pt) = 16 fl oz</li>
+            <li>fluid ounce (fl oz) = 8 fl dr</li>
+            <li>fluid dram (fl dr) = 60 minims (m)</li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="font-semibold mb-2">Household Measures</h3>
+          <ul>
+            <li>1 teaspoon (tsp) = 5 mL</li>
+            <li>1 tablespoon (tbsp) = 15 mL or 3 tsp</li>
+            <li>1 cup (cup) = 8 fl oz</li>
+          </ul>
+        </div>
       </section>
       {/* <button className="bg-slate-400 h-[50px] w-[100px] rounded mt-5 text-white">Next Page</button> */}
     </div>
