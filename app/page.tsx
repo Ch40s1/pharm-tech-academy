@@ -201,7 +201,7 @@ export default function Home() {
             </li>
             <li className="text-lg text-white">
               <Link
-                href="/modules/order-entry"
+                href="/modules/order-entry/4.2"
                 className="text-blue-500 underline hover:text-blue-700"
               >
                 Pharmacy Calculations: 4.2
