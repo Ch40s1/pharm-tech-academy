@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./icon.png" type="image/x-icon">
+  <title>Course App</title>
+  <link href="./styles/output.css" rel="stylesheet"> <!-- Tailwind CSS -->
+  <script defer src="../dist/app.js"></script>
+</head>
+
+<body class="bg-gray-100">
+  <header class="bg-blue-500 text-white p-4">
+    <nav>
+      <ul class="flex justify-around">
+        <li>
+          <a href="./index.html" class="hover:text-blue-700">Home</a>
+        </li>
+        <li>
+          <a href="./intro.html" class="hover:text-blue-700">Intro</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div id="course-content" class="p-6">
+    <header>
+      <h1 class="text-2xl font-bold mb-4">Pharmacy Technician PTCB Content Guidelines</h1>
+    </header>
+
+    <section class="mb-6">
+      <h2 class="text-xl font-semibold mb-2">Content Areas</h2>
+      <table class="w-full table-auto border-collapse border border-gray-300">
+        <thead>
+          <tr>
+            <th class="border border-gray-400 p-2 text-left">Section</th>
+            <th class="border border-gray-400 p-2 text-left">Description</th>
+          </tr>
+        </thead>
+        <!-- Section 1: Medications -->
+        <section class="mb-10">
+          <h2 class="text-3xl font-semibold mb-4">1. Medications - 40%</h2>
+          <table class="w-full table-auto border-collapse border border-gray-300">
+            <thead>
+              <tr>
+                <th class="border border-gray-400 p-2 text-left">Topic</th>
+                <th class="border border-gray-400 p-2 text-left">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-gray-400 p-2">
+                  <button class="bg-blue-500 text-white p-2 rounded" onclick="loadDetails('1.1')">Load Details
+                    1.1</button>
+                </td>
+                <td class="border border-gray-400 p-2">
+                  Generic names, brand names, and classifications of medications
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 p-2">
+                  <button class="bg-blue-500 text-white p-2 rounded" onclick="loadDetails('1.2')">Load Details
+                    1.2</button>
+                </td>
+                <td class="border border-gray-400 p-2">
+                  Therapeutic equivalence
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 p-2">
+                  <button class="bg-blue-500 text-white p-2 rounded" onclick="loadDetails('1.3')">Load Details
+                    1.3</button>
+                </td>
+                <td class="border border-gray-400 p-2">
+                  Common and life-threatening drug interactions and contraindications (e.g., drug-disease, drug-drug,
+                  drug-dietary supplement, drug-laboratory, drug-nutrient)
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 p-2">
+                  <button class="bg-blue-500 text-white p-2 rounded" onclick="loadDetails('1.4')">Load Details
+                    1.4</button>
+                </td>
+                <td class="border border-gray-400 p-2">
+                  Strengths/dose, dosage forms, routes of administration, special handling and administration
+                  instructions, and duration of drug therapy
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 p-2">
+                  <button class="bg-blue-500 text-white p-2 rounded" onclick="loadDetails('1.5')">Load Details
+                    1.5</button>
+                </td>
+                <td class="border border-gray-400 p-2">
+                  Common and severe medication side effects, adverse effects, and allergies
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 p-2">
+                  <button class="bg-blue-500 text-white p-2 rounded" onclick="loadDetails('1.6')">Load Details
+                    1.6</button>
+                </td>
+                <td class="border border-gray-400 p-2">
+                  Indications of medications and dietary supplements
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 p-2">
+                  <button class="bg-blue-500 text-white p-2 rounded" onclick="loadDetails('1.7')">Load Details
+                    1.7</button>
+                </td>
+                <td class="border border-gray-400 p-2">
+                  Drug stability (e.g., oral suspensions, insulin, reconstitutables, injectables, vaccinations)
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 p-2">
+                  <button class="bg-blue-500 text-white p-2 rounded" onclick="loadDetails('1.8')">Load Details
+                    1.8</button>
+                </td>
+                <td class="border border-gray-400 p-2">
+                  Narrow therapeutic index (NTI) medications
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 p-2">
+                  <button class="bg-blue-500 text-white p-2 rounded" onclick="loadDetails('1.9')">Load Details
+                    1.9</button>
+                </td>
+                <td class="border border-gray-400 p-2">
+                  Physical and chemical incompatibilities related to non-sterile compounding and reconstitution
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 p-2">
+                  <button class="bg-blue-500 text-white p-2 rounded" onclick="loadDetails('1.10')">Load Details
+                    1.10</button>
+                </td>
+                <td class="border border-gray-400 p-2">
+                  Proper storage of medications (e.g., temperature ranges, light sensitivity, restricted access)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Section 2: Federal Requirements -->
+        <section class="mb-10">
+          <h2 class="text-3xl font-semibold mb-4">2. Federal Requirements - 12.5%</h2>
+          <table class="w-full table-auto border-collapse border border-gray-300">
+            <thead>
+              <tr>
+                <th class="border border-gray-400 p-2 text-left">Topic</th>
+                <th class="border border-gray-400 p-2 text-left">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-gray-400 p-2">
+                  <button class="bg-blue-500 text-white p-2 rounded" onclick="loadDetails('2.1')">Load Details
+                    2.1</button>
+                </td>
+                <td class="border border-gray-400 p-2">
+                  Federal requirements for handling and disposal of non-hazardous, hazardous, and pharmaceutical
+                  substances and waste
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 p-2">
+                  <button class="bg-blue-500 text-white p-2 rounded" onclick="loadDetails('2.2')">Load Details
+                    2.2</button>
+                </td>
+                <td class="border border-gray-400 p-2">
+                  Federal requirements for controlled substance prescriptions (i.e., new, refill, transfer) and DEA
+                  controlled substance schedules
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 p-2">
+                  <button class="bg-blue-500 text-white p-2 rounded" onclick="loadDetails('2.3')">Load Details
+                    2.3</button>
+                </td>
+                <td class="border border-gray-400 p-2">
+                  Federal requirements (e.g., DEA, FDA) for controlled substances (i.e., receiving, storing, ordering,
+                  labeling, dispensing, reverse distribution, take-back programs, and loss or theft of)
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 p-2">
+                  <button class="bg-blue-500 text-white p-2 rounded" onclick="loadDetails('2.4')">Load Details
+                    2.4</button>
+                </td>
+                <td class="border border-gray-400 p-2">
+                  Federal requirements for restricted drug programs and related medication processing (e.g.,
+                  pseudoephedrine, Risk Evaluation and Mitigation Strategies [REMS])
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 p-2">
+                  <button class="bg-blue-500 text-white p-2 rounded" onclick="loadDetails('2.5')">Load Details
+                    2.5</button>
+                </td>
+                <td class="border border-gray-400 p-2">
+                  FDA recall requirements (e.g., medications, devices, supplies, supplements, classifications)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Section 3: Patient Safety and Quality Assurance -->
+        <section class="mb-10">
+          <h2 class="text-3xl font-semibold mb-4">3. Patient Safety and Quality Assurance - 26.25%</h2>
+          <table class="w-full table-auto border-collapse border border-gray-300">
+            <thead>
+              <tr>
+                <th class="border border-gray-400 p-2 text-left">Topic</th>
+                <th class="border border-gray-400 p-2 text-left">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-gray-400 p-2">
+                  <button class="bg-blue-500 text-white p-2 rounded" onclick="loadDetails('3.1')">Load Details
+                    3.1</button>
+                </td>
+                <td class="border border-gray-400 p-2">
+                  High-alert/risk medications and look-alike/sound-alike (LASA) medications
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 p-2">
+                  <button class="bg-blue-500 text-white p-2 rounded" onclick="loadDetails('3.2')">Load Details
+                    3.2</button>
+                </td>
+                <td class="border border-gray-400 p-2">
+                  Error prevention strategies (e.g., prescription or medication order to correct patient, Tall Man
+                  lettering, separating inventory, leading and trailing zeros, bar code usage, limit use of
+                  error-prone abbreviations)
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 p-2">
+                  <button class="bg-blue-500 text-white p-2 rounded" onclick="loadDetails('3.3')">Load Details
+                    3.3</button>
+                </td>
+                <td class="border border-gray-400 p-2">
+                  Issues that require pharmacist intervention (e.g., drug utilization review [DUR], adverse drug event
+                  [ADE], OTC recommendation, therapeutic substitution, misuse, adherence, post-immunization follow-up,
+                  allergies, drug interactions)
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 p-2">
+                  <button class="bg-blue-500 text-white p-2 rounded" onclick="loadDetails('3.4')">Load Details
+                    3.4</button>
+                </td>
+                <td class="border border-gray-400 p-2">
+                  Event reporting procedures (e.g., medication errors, adverse effects, and product integrity,
+                  MedWatch, near miss, root-cause analysis [RCA])
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 p-2">
+                  <button class="bg-blue-500 text-white p-2 rounded" onclick="loadDetails('3.5')">Load Details
+                    3.5</button>
+                </td>
+                <td class="border border-gray-400 p-2">
+                  Types of prescription errors (e.g., abnormal doses, early refill, incorrect quantity, incorrect
+                  patient, incorrect drug)
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 p-2">
+                  <button class="bg-blue-500 text-white p-2 rounded" onclick="loadDetails('3.6')">Load Details
+                    3.6</button>
+                </td>
+                <td class="border border-gray-400 p-2">
+                  Hygiene and cleaning standards (e.g., handwashing, personal protective equipment [PPE], cleaning
+                  counting trays, countertop, and equipment)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Section 4: Order Entry and Processing -->
+        <section class="mb-10">
+          <h2 class="text-3xl font-semibold mb-4">4. Order Entry and Processing - 21.25%</h2>
+          <table class="w-full table-auto border-collapse border border-gray-300">
+            <thead>
+              <tr>
+                <th class="border border-gray-400 p-2 text-left">Topic</th>
+                <th class="border border-gray-400 p-2 text-left">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-gray-400 p-2">
+                  <button class="bg-blue-500 text-white p-2 rounded" onclick="loadCourse('4.1')">Load Details
+                    4.1</button>
+                </td>
+                <td class="border border-gray-400 p-2">
+                  Procedures to compound non-sterile products (e.g., ointments, mixtures, liquids, emulsions,
+                  suppositories, enemas)
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 p-2">
+                  <button class="bg-blue-500 text-white p-2 rounded" onclick="loadDetails('4.2')">Load Details
+                    4.2</button>
+                </td>
+                <td class="border border-gray-400 p-2">
+                  Formulas, calculations, ratios, proportions, alligations, conversions, Sig codes (e.g., b.i.d.,
+                  t.i.d., Roman numerals), abbreviations, medical terminology, and symbols for days supply, quantity,
+                  dose, concentration, dilutions
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 p-2">
+                  <button class="bg-blue-500 text-white p-2 rounded" onclick="loadDetails('4.3')">Load Details
+                    4.3</button>
+                </td>
+                <td class="border border-gray-400 p-2">
+                  Equipment/supplies required for drug administration (e.g., package size, unit dose, diabetic
+                  supplies, spacers, oral and injectable syringes)
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 p-2">
+                  <button class="bg-blue-500 text-white p-2 rounded" onclick="loadDetails('4.4')">Load Details
+                    4.4</button>
+                </td>
+                <td class="border border-gray-400 p-2">
+                  Lot numbers, expiration dates, and National Drug Code (NDC) numbers
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 p-2">
+                  <button class="bg-blue-500 text-white p-2 rounded" onclick="loadDetails('4.5')">Load Details
+                    4.5</button>
+                </td>
+                <td class="border border-gray-400 p-2">
+                  Procedures for identifying and returning dispensable, non-dispensable, and expired medications and
+                  supplies (e.g., credit return, return to stock, reverse distribution)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </table>
+    </section>
+  </div>
+  </section>
+
+  <section class="mb-8">
+    <p class="text-lg text-gray-700">
+      Note: This roadmap is based on a course I am taking, provided by Dallas College. I will be updating this page as I
+      progress through the course.
+    </p>
+    <a href="https://www.dallascollege.edu/cd/ce/training/health/pages/pharmacy-technician-retail.aspx" target="_blank"
+      class="text-blue-500 underline hover:text-blue-700">
+      Dallas College CE: Pharmacy Technician
+    </a>
+  </section>
+
+  <footer>
+    <a href="https://www.ptcb.org/guidebook/ptce-content-outline" target="_blank"
+      class="text-blue-500 underline hover:text-blue-700">
+      PTCB content outline
+    </a>
+  </footer>
+  </div>
+
+  <!-- Div where course content will be loaded -->
+  <!-- <div id="course-content" class="bg-white p-6 shadow-md rounded-lg"></div> -->
+</body>
+
+</html>
