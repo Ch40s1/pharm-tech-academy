@@ -1,26 +1,14 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
-    "paths": {
-      "@/*": ["./*"]
-    }
+    "target": "es6",                                  /* Specify ECMAScript target version */
+    "module": "es6",                                  /* Use ES6 modules */
+    "strict": true,                                   /* Enable strict type-checking options */
+    "esModuleInterop": true,                          /* Enable compatibility between CommonJS and ES modules */
+    "skipLibCheck": true,                             /* Skip type checking of all declaration files (*.d.ts) */
+    "forceConsistentCasingInFileNames": true,         /* Ensure consistent casing in imports */
+    "outDir": "./dist",                               /* Output directory for compiled JavaScript */
+    "rootDir": "./client"                             /* Source directory for TypeScript files */
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": ["client/**/*.ts"],                      /* Include TypeScript files */
+  "exclude": ["node_modules"]                         /* Exclude node_modules */
 }
